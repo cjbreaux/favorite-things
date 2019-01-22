@@ -14,18 +14,28 @@
       <h1>Favorite Things</h1>
       <form id="formOne">
         <div class="form-group row">
-          <label for="userInput" class="col-2 col-form-label">Favorite Things!</label>
-          <div class="col-8">
-            <input type="text" class="form-control" id="userInput" placeholder="Enter your favorite things here!">
+          <label for="nameInput" class="col-2 col-form-label">Your Name: </label>
+          <div class="col-10">
+            <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+            <label for="thingInput" class="col-2 col-form-label">Favorite Things!</label>
+          <div class="col-10">
+            <input type="text" class="form-control" id="thingInput" placeholder="Enter your favorite things here!">
+          </div>
+          <button type="submit" class="btn btn-primary col">Submit</button>
         </div>
 
       </form>
+      <div class="row">
+        <ul class="col-6" id="userList">
+          <p>Hey this is in the ul!</p>
+            <li>TEst</li>
+        </ul>
+        <ul class="col-6" id="favList">
+          <li>double test</li>
+        </ul>
+      </div>
 
-      <ul id="favList">
-
-      </ul>
 
 
 

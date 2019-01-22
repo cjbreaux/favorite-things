@@ -1,11 +1,21 @@
+
+var userNames=[];
 var things = [];
+var userAndThings =[];
 var counter=0;
 $(document).ready(function(){
   $("form#formOne").submit(function(event){
     event.preventDefault();
-    things.push($("#userInput").val());
+    userNames.push($("#nameInput").val());
+    things.push($("#thingInput").val());
     $("#favList").append("<li>" + things[counter] + "</li>");
-    console.log(things+counter);
+    $("#userList").append("<li>" + userNames[counter] + "</li>");
+    userAndThings.push(userNames[counter]+" "+things[counter])
+    console.log("here they are together: "+ userAndThings)
     counter+=1;
+    $("ul#userList li").click(function(){
+      alert(things[counter]);
+    });
   });
+
 });
